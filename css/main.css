@@ -20,7 +20,7 @@
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat;
-        color: black;
+        color: rgb(197, 41, 202);
         text-align: center;
       }
 
@@ -60,18 +60,11 @@
 
         .centeredText {
           position: absolute; 
-          top: 30%;
+          top: 20%;
           left: 50%;
           transform: translate(-50%, -50%);
         }
-
-        .inline {
-          display: inline-block;
-          width: 20%; 
-          text-align: center;
-          padding-left: 3%;
-          height: 50%;
-     }
+        
 
      .inlineFooter {
       display: inline-block;
@@ -110,3 +103,16 @@
           font-size: medium;
         }
 
+        .tContainer{
+
+          text-align: center;
+        }
+
+        .textBorder {
+          display: inline-block;
+          width: 18%; /* Set the width of each paragraph */
+          margin: 10px; /* Set margin for spacing between paragraphs */
+          padding: 2%; /* Set padding for additional spacing within each paragraph */
+          border: 1px solid #333; /* Add a border for visual separation */
+          background-color: rgba(224, 219, 219, 0.76); /* Background color for each paragraph */
+      }
