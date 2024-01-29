@@ -1,20 +1,20 @@
-      body, html {
+      body, html 
+      {
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-
-
             height: 100%;
-
-
-
             background-image: url("../img/backgroundall.jpg");
-
             background-size: cover;
+      }
 
-        }
+      body
+      {
+        overflow-x:hidden;
+      }
 
-      header {
+      header 
+      {
         height: 50%;
         background-image: url(../img/background.jpg);
         background-size: cover; 
@@ -24,95 +24,199 @@
         text-align: center;
       }
 
-        nav {
-            background-color: #22a6e4;
-            overflow: hidden;
-            
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        nav li {
-            float: right;
-        }
-
-        nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        nav li a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-      .center {
-          text-align: center;
-        }
-
-        .centeredText {
-          position: absolute; 
-          top: 20%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-        
-
-     .inlineFooter {
-      display: inline-block;
-      width: 45%; 
-      text-align: center;
-      padding-left: 1%;
- }
-
-      .imageContainer{
-        display: inline-block;
-      width: 30%; 
-      text-align: center;
-      padding-left: 10%;
+      nav 
+      {
+        background-color: #22a6e4;
+        overflow: hidden;
       }
 
-      .imageContainerGallery{
+      nav ul 
+      {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      nav li 
+      {
+        float: right;
+      }
+
+      nav li a 
+      {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      nav li a:hover 
+      {
+        background-color: #ddd;
+        color: black;
+      }
+
+      hr
+      {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border: 1px solid;
+      }
+
+      .center 
+      {
+        text-align: center;
+      }
+
+      .centeredText 
+      {
+        position: absolute; 
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+        
+
+     .inlineFooter 
+     {
+        display: inline-block;
+        width: 45%; 
+        text-align: center;
+        padding-left: 1%;
+      }
+
+      .imageContainerGallery
+      {
         display: inline-block;
       width: 25%; 
       text-align: center;
       padding-left: 5%;
       }
 
-      .vidContainer{
+      .vidContainer
+      {
         display: flex;
         justify-content: center;
       }
 
 
-        .left {
-          text-align: left; 
+      .left 
+      {
+        text-align: left; 
+      }
+
+      .p1 
+      {
+        text-align: left; 
+        font-family: sans-serif;
+        font-size: medium;
+      }
+
+      div.tContainer
+      {
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+      }
+
+      div.textBorder 
+      {
+        width: 18%; /* Set the width of each paragraph */
+        margin: 10px; /* Set margin for spacing between paragraphs */
+        padding: 2%; /* Set padding for additional spacing within each paragraph */
+        border: 1px solid #333; /* Add a border for visual separation */
+        background-color: rgba(224, 219, 219, 0.76); /* Background color for each paragraph */
+        top: 0;
+        bottom: 0;
+      }
+
+      div.imageContainer
+      {
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+      }
+
+      div.slideshow
+      {
+        position: relative;
+        display: inline-flex;
+        width: 45%;
+        height: 800px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      img.slides
+      {
+        margin: 10px;
+        transition: opacity 0.5s ease-in-out;
+        display: none;
+      }
+      
+      #previous:hover, #next:hover 
+      {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      #previous, #next 
+      {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        margin-top: -22px;
+        width: auto;
+        color: black;
+        padding: 12px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      #next
+      {
+        right: 0;
+      }
+
+      #previous
+      {
+        left: 0;
+      }
+
+      @keyframes slide {
+        0% {
+          opacity: 0;
         }
-
-        .p1 {
-          text-align: left; 
-          font-family: sans-serif;
-          font-size: medium;
+        20% {
+          opacity: 0.2;
         }
-
-        .tContainer{
-
-          text-align: center;
+        40% {
+          opacity: 0.4;
         }
+        60% {
+          opacity: 0.6;
+        }
+        80% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
 
-        .textBorder {
-          display: inline-block;
-          width: 18%; /* Set the width of each paragraph */
-          margin: 10px; /* Set margin for spacing between paragraphs */
-          padding: 2%; /* Set padding for additional spacing within each paragraph */
-          border: 1px solid #333; /* Add a border for visual separation */
-          background-color: rgba(224, 219, 219, 0.76); /* Background color for each paragraph */
+      .slideshow img {
+        animation: slide 0.5s;
       }
