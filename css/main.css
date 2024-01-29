@@ -1,11 +1,16 @@
       body, html 
       {
-            font-family: sans-serif;
+            font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
             height: 100%;
-            background-image: url("../img/backgroundall.jpg");
+            /* background-image: url("../img/backgroundall.jpg"); */
             background-size: cover;
+      }
+
+      footer
+      {
+        font-family: "Poppins", sans-serif;
       }
 
       body
@@ -15,12 +20,13 @@
 
       header 
       {
-        height: 50%;
+        font-family: "Sofia", sans-serif;
+        height: 70%;
         background-image: url(../img/background.jpg);
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat;
-        color: rgb(197, 41, 202);
+        color: peachpuff;       
         text-align: center;
       }
 
@@ -75,7 +81,7 @@
       .centeredText 
       {
         position: absolute; 
-        top: 20%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
@@ -118,18 +124,22 @@
 
       div.tContainer
       {
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
         display: inline-flex;
         text-align: center;
         justify-content: center;
+        color: grey;
       }
 
       div.textBorder 
       {
-        width: 18%; /* Set the width of each paragraph */
-        margin: 10px; /* Set margin for spacing between paragraphs */
-        padding: 2%; /* Set padding for additional spacing within each paragraph */
-        border: 1px solid #333; /* Add a border for visual separation */
-        background-color: rgba(224, 219, 219, 0.76); /* Background color for each paragraph */
+        width: 33%; /* Set the width of each paragraph */
+        margin: 15px; /* Set margin for spacing between paragraphs */
+        padding: 1%; /* Set padding for additional spacing within each paragraph */
+        border: 1px;
+        
         top: 0;
         bottom: 0;
       }
@@ -148,8 +158,8 @@
       {
         position: relative;
         display: inline-flex;
-        width: 45%;
-        height: 800px;
+        width: 60%;
+        height: 700px;
         margin: 0;
         padding: 0;
         justify-content: center;
