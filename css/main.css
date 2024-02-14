@@ -20,8 +20,8 @@
 
       header 
       {
-        font-family: "Sofia", sans-serif;
-        height: 70%;
+        font-family: "Poppins", sans-serif;
+        height: 50%;
         background-image: url(../img/background.jpg);
         background-size: cover; 
         background-position: center; 
@@ -81,7 +81,7 @@
       .centeredText 
       {
         position: absolute; 
-        top: 60%;
+        top: 13%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
@@ -136,10 +136,9 @@
       div.textBorder 
       {
         width: 33%; /* Set the width of each paragraph */
-        margin: 15px; /* Set margin for spacing between paragraphs */
-        padding: 1%; /* Set padding for additional spacing within each paragraph */
-        border: 1px;
-        
+        margin: 3%; /* Set margin for spacing between paragraphs */
+        padding: 2%; /* Set padding for additional spacing within each paragraph */
+        border: 1%;
         top: 0;
         bottom: 0;
       }
@@ -229,4 +228,42 @@
 
       .slideshow img {
         animation: slide 0.5s;
+      }
+
+      div.FAContainer
+      {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+        color: grey;
+      }
+      div.FAcontent {
+        width: 33%; /* Set the width of each paragraph */
+        margin: 3%; /* Set margin for spacing between paragraphs */
+        padding: 2%; /* Set padding for additional spacing within each paragraph */
+        border: 1%;
+        top: 0;
+        bottom: 0;
+        
+      }
+      div.FAcontent img {
+        width: 100px; /* Adjust image width as needed */
+        height: 100px; /* Maintain aspect ratio */
+      }
+      
+      .IntroContain{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+        color: black;
+      }
+      .IntroText {
+  padding: 2%; /* Padding around the paragraph */
+
       }
